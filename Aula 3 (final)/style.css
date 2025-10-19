@@ -1,0 +1,120 @@
+/* Estilo futurista neon */
+body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top, #0a0024, #000);
+    color: #e0e0ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 50px 20px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+    text-shadow: 0 0 10px #00ffff;
+}
+
+h1 {
+    color: #00ffff;
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #a0a0ff;
+    font-size: 1.2rem;
+}
+
+main {
+    margin: 50px auto 120px;
+    max-width: 900px;
+    padding: 0 25px;
+}
+
+.imagem-section {
+    margin-bottom: 40px;
+}
+
+.imagem-section img {
+    border-radius: 15px;
+    box-shadow: 0 0 25px #00ffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+}
+
+.imagem-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #00ffff;
+}
+
+.imagem-section p {
+    max-width: 750px;
+    margin: 25px auto;
+    line-height: 1.7;
+    color: #d0d0ff;
+    font-size: 1.05rem;
+}
+
+.conteudo ul {
+    list-style-type: none;
+    padding: 25px;
+    margin: 40px auto;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 12px #00ffff33;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.conteudo li {
+    margin: 20px 0;
+    font-size: 1.05rem;
+    position: relative;
+    padding-left: 25px;
+}
+
+.conteudo li::before {
+    content: "💠";
+    position: absolute;
+    left: 0;
+    color: #00ffff;
+}
+
+.like {
+    margin-top: 50px;
+}
+
+button {
+    padding: 14px 35px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #00ffff, #007bff);
+    color: #fff;
+    box-shadow: 0 0 25px #00ffff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 45px #00ffff;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(0, 255, 255, 0.3);
+    color: #00ffff;
+    padding: 18px 0;
+    font-size: 0.95rem;
+    text-shadow: 0 0 8px #00ffff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

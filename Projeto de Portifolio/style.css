@@ -1,0 +1,225 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    color: #fff;
+    background-color: #0b0b0b;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+/* Nav */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    box-shadow: 0 0 20px #6a0dad;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #0ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    text-shadow: 0 0 5px #0ff;
+}
+
+.nav-links li a:hover {
+    color: #ff0;
+    text-shadow: 0 0 10px #ff0, 0 0 20px #ff0;
+}
+
+/* Hero */
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #6a0dad, #ff00ff);
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    /* mais espaçamento */
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.hero h1 span {
+    color: #ff0;
+    text-shadow: 0 0 15px #ff0, 0 0 25px #ff0;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+    /* mais espaçamento */
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.btn {
+    text-decoration: none;
+    color: #0b0b0b;
+    background-color: #ff0;
+    padding: 14px 35px;
+    /* mais espaçamento interno */
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #ff0, 0 0 20px #ff0;
+}
+
+.btn:hover {
+    background-color: #fff200;
+    box-shadow: 0 0 15px #fff200, 0 0 30px #fff200;
+}
+
+/* Seções */
+section {
+    padding: 100px 50px;
+    /* mais espaçamento top/bottom */
+    text-align: center;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    /* mais espaçamento */
+    color: #ff0;
+    text-shadow: 0 0 10px #ff0, 0 0 20px #ff0;
+}
+
+section p {
+    margin-bottom: 25px;
+    /* espaçamento entre parágrafos */
+}
+
+/* Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    /* mais espaçamento entre cards */
+    margin-top: 40px;
+    /* mais espaçamento top */
+}
+
+.project-card {
+    background: #111;
+    padding: 30px;
+    /* mais espaçamento interno */
+    border-radius: 12px;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 15px #0ff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #ff0, 0 0 40px #ff0;
+}
+
+/* Links de contato */
+.links p {
+    margin-bottom: 15px;
+    /* espaçamento entre links */
+}
+
+.links p a {
+    color: #0ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links p a:hover {
+    color: #ff0;
+    text-shadow: 0 0 10px #ff0;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 20px;
+    /* mais espaçamento entre inputs */
+}
+
+input,
+textarea {
+    padding: 14px;
+    border-radius: 8px;
+    border: 2px solid #0ff;
+    background: #111;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ff0;
+    box-shadow: 0 0 10px #ff0;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #ff0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #ff0;
+}
+
+button:hover {
+    background: #fff200;
+    box-shadow: 0 0 15px #fff200;
+}
+
+.success-message {
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    padding: 30px 20px;
+    /* mais espaçamento */
+    text-align: center;
+    background: #111;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
